@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Sexo</th>
+    <th>Nascimento</th>
+  </tr>
+  {% for participante in participantes %}
+  <tr>
+    <td>{{ participante.nome }}</td>
+    <td>{{ participante.sexo }}</td>
+    <td>{{ participante.nascimento }}</td>
+  </tr>
+  {% endfor %}
+</table>

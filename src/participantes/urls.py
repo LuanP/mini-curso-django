@@ -1,6 +1,6 @@
 from django.conf.urls import url
-from participantes.views import olamundo
+from participantes.views import lista_participantes
 
 urlpatterns = [
-    url(r'^olamundo$', olamundo),
+    url(r'^lista_participantes/$', lista_participantes),
 ]

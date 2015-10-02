@@ -1,4 +1,6 @@
-from django.http import HttpResponse
+from django.shortcuts import render
+from participantes.models import Participante
 
-def olamundo(request):
-    return HttpResponse('Ola, Mundo')
+def lista_participantes(request):
+    participantes = Participante.objects.all()
+    return render(request, 'list.html', {'participantes': participantes})

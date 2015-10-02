@@ -1,3 +1,6 @@
 from django.contrib import admin
+from participantes.models import Participante
 
-# Register your models here.
+@admin.register(Participante)
+class ParticipanteAdmin(admin.ModelAdmin):
+    list_display = ('nome', 'sexo')
