@@ -3,3 +3,4 @@ django
 gunicorn
 psycopg2
 dj-database-url
+Pillow
